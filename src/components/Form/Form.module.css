@@ -1,0 +1,63 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5; /* Ajusta la opacidad de la imagen según tus necesidades */
+}
+
+.form {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Ajusta la altura de las filas según tus necesidades */
+  align-items: center;
+  justify-items: center;
+  gap: 20px; /* Ajusta la separación entre los elementos del formulario según tus necesidades */
+  background-color: rgba(0, 0, 0, 0.8); /* Ajusta el color de fondo del formulario según tus necesidades */
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px; /* Ajusta el ancho del formulario según tus necesidades */
+}
+
+.label {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%; /* Ajusta el ancho de los inputs según tus necesidades */
+}
+
+.submit {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f9a602;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%; /* Ajusta el ancho del botón según tus necesidades */
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+

@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(151, 110, 110, 0.8); /* Color de fondo que combina con la barra de búsqueda */
+  padding: 22px;
+}
+
+.container a {
+  text-decoration: none;
+  color: white;
+  background-color: #ff9800; /* Agrega el color de fondo deseado */
+  border-radius: 23px; /* Hace que los enlaces se vean redondos */
+  padding: 10px 20px; /* Ajusta el tamaño del botón */
+  margin: 0 5px; /* Ajusta el margen entre los enlaces */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2); /* Agrega sombras */
+}
+
