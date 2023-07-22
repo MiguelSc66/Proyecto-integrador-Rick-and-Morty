@@ -1,0 +1,104 @@
+.card {
+  background-color: #f2f2f2; /* Cambia el color de fondo a un tono neutro no transparente */
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 10px;
+  margin: 10px;
+  width: 240px;
+  height: 400px;
+  transition: transform 0.6s;
+  position: relative;
+  margin-top: 170px;
+  border: 1px solid #000000; /* Agrega un borde negro alrededor de la carta */
+}
+
+.front {
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
+  font: 1em sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.button {
+  position: absolute;
+  top: 4px;
+  right: 1%;
+  padding: 8px;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.h4 {
+    color:#000000;
+  font-weight: normal;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+.buttonLike {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.buttonLike:hover {
+  transform: scale(1.2);
+}
+
+.buttonDislike {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.buttonDislike:hover {
+  transform: scale(1.2);
+}
+.imglike{
+  width: 25px;
+  height: 25px;
+}
+.imgdislike{
+  width: 25px;
+  height: 25px;
+}
