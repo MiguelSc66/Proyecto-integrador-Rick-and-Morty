@@ -1,7 +1,0 @@
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Define el tamaño de las columnas */
-    grid-gap: 20px; /* Define el espacio entre las cartas */
-    justify-items: center; /* Centra horizontalmente las cartas */
-    align-items: center; /* Centra verticalmente las cartas */
-}
