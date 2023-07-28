@@ -11,6 +11,8 @@ export default function About() {
         <p>
           Soy Miguel Iván Scaccia, tengo 18 años y me apasiona la programación. Me encanta aprender nuevos lenguajes y tecnologías, y disfruto creando aplicaciones y solucionando problemas utilizando mi conocimiento en programación.
         </p>
+        <b/>
+        <p>Este es mi proyecto invididual de Henry.</p>
         {/* Puedes agregar más información aquí */}
       </div>
     </div>

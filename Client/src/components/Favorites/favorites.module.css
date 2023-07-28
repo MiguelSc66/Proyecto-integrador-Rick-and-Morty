@@ -1,9 +1,6 @@
-.container {
-    
-}
 .card {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .select {
