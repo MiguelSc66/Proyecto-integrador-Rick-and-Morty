@@ -3,6 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import style from "./Detail.module.css";
 import { useParams } from "react-router-dom";
+import imgFond from "../img/imgDetail.jpg"
 
 export default function Detail() {
     const {id} = useParams()
@@ -23,6 +24,7 @@ export default function Detail() {
     
     return (
     <div className={style.presentation}>
+        <img className={style.imgFond} src={imgFond} alt="Imagen de Fondo"/>
         <div className={style.rectangle}>
             <img className={style.roundedImage} src={PJcharacter.image} alt="imagen" />
             <div>

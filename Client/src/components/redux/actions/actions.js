@@ -3,27 +3,44 @@ import axios from "axios";
 //actions creators
 export const addFav = (character) => {
     const endpoint = 'http://localhost:3001/favorites/';
-    return (dispatch) => {
-       axios.post(endpoint, character).then(({ data }) => {
-          return dispatch({
-             type: ADDFAVORITE,
-             payload: data,
-          });
-       });
+    
+    return async (dispatch) => {
+      try {
+         const response = await axios.post(endpoint, character); // Enviamos character por body
+         const { data } = response;
+         return dispatch({
+           type: ADDFAVORITE,
+           payload: data,
+         });
+       } catch (error) {
+         alert(error.message);
+       }
+      
+      //  axios.post(endpoint, character).then(({ data }) => {
+      //     return dispatch({
+      //        type: ADDFAVORITE,
+      //        payload: data,
+      //     });
+      //  });
     };
  };
 
- export const removeFav = (id) => {
-    const endpoint = 'http://localhost:3001/favorites/' + id;
-    return (dispatch) => {
-       axios.delete(endpoint).then(({ data }) => {
-          return dispatch({
-             type: DELETEFAVORITE,
-             payload: data,
-       });
-       });
-    };
- };
+export const removeFav = (id) => {
+   const endpoint = 'http://localhost:3001/favorites/' + id;
+    
+   return async (dispatch) => {
+      try {
+         const response = await axios.delete(endpoint);
+         const { data } = response;
+         return dispatch({
+            type: DELETEFAVORITE,
+            payload: data,
+         });
+      } catch (error) {
+         alert(error.message);
+      }
+   };
+}
 
 export function filterCards(gender) {
     return {
